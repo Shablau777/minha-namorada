@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto, Texto e Áudio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('namoro.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .texto {
+            margin-right: 20px; /* Espaço à direita para a segunda foto */
+            width: 400px; /* Largura do retângulo */
+            height: 300px; /* Altura do retângulo */
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid #ff69b4; /* Cor rosa: #ff69b4 */
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+            overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+        }
+        .foto {
+            width: 400px; /* Largura da foto */
+            height: 300px; /* Altura da foto */
+            border-radius: 5px;
+            overflow: hidden; /* Impede que a imagem ultrapasse os limites */
+        }
+        .foto img {
+            width: 100%; /* Garante que a imagem preencha todo o espaço disponível */
+            height: 100%;
+            object-fit: cover; /* Redimensiona a imagem para cobrir todo o espaço da div */
+        }
+        .texto-view {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; /* Define a fonte do texto */
+            font-size: 14px; /* Define o tamanho da fonte */
+            overflow: auto; /* Adiciona barra de rolagem se necessário */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="texto">
+            <div class="texto-view" contenteditable="false">
+                Oi amor, tava com muita saudade de você então decidi escrever uma carta do meu jeito de nerdola😄, é a primeira vez que faço por html.
+                 Amor enquanto eu estava com saudade eu me lembrei do seu sorriso, um sorriso puro, uma caracteristica marcante em você, seu sorriso me deixa deixa feliz, será porque me deixa feliz? só sei que toda vez que vejo meu coração se enche de alegria, tento fazer você repetir esse sorriso com minhas palhaçadas, as vezes não da certo, mas isso mostra que seu sorriso não é qualquer, seu sorriso é unico e verdadeiro em um mundo a onde pessoa se esconde atras de um sorriso falso e triste. tentar forçar sair um sentimento tão puro desse, faz com que ele não saia tão lindo assim. um sorriso como seu vale mais que um milhão de sorrisos falsos por ai, porque é um sorriso que tem que fazer para merecer. Não sei se lendo essa carta você estara sorrindo para mim mas saiba que seu sorriso é muito importante para mim, além de ser belo, me mostra que você esta feliz e bem. Essa não é só uma das infinitas caracteristicas que eu aprecio em você. Aprecio seu jeito vaidosa de sempre se cuidar, toda vez aparece linda e cheirosa me surpreendendo a cada dia. seu jeito de se importar comigo nos minimos detalhes, seus presentes feitos a mão com todo carinho, o amor que você tem com sua familia mesmo que não retribuem na maioria das vezes e seu jeito de fazer algo sem querer nada em troca. Bom termino essa carta mostrando uma foto que descreve bem o sorriso que eu quero tanto proteger e ver todos os dias da minha vida. Ass com carinho Roger❤️
+            </div>
+        </div>
+        <div class="foto">
+            <img src="bebe.jpg" alt="Sua Outra Foto">
+        </div>
+    </div>
+
+    <audio autoplay controls>
+        <source src="cigano.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+</body>
+</html>
